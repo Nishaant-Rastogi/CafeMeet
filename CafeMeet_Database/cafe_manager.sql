@@ -1,0 +1,9 @@
+drop table if exists Cafe_Manager;
+CREATE TABLE Cafe_Manager(
+Manager_ID VARCHAR(100) NOT NULL PRIMARY KEY,
+Manager_Name VARCHAR(100) NOT NULL,
+Manager_Email VARCHAR(100) NOT NULL,
+Manager_PhoneNumber VARCHAR(100) NOT NULL,
+Password VARCHAR(100) NOT NULL,
+FOREIGN KEY (Cafe_ID) REFERENCES Cafe(Cafe_ID) ON DELETE CASCADE
+);

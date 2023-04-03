@@ -1,0 +1,11 @@
+drop table if exists Tables;
+CREATE TABLE Tables(
+Table_ID VARCHAR(100) NOT NULL PRIMARY KEY,
+Table_Capacity INT NOT NULL,
+Seating_Area VARCHAR(100) NOT NULL,
+FOREIGN KEY (Cafe_ID) REFERENCES Cafe(Cafe_ID) ON DELETE CASCADE
+);
+
+INSERT INTO Tables
+VALUES
+("10001", "1", 4, "Roof");

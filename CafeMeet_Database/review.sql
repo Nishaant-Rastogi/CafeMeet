@@ -1,0 +1,8 @@
+drop table if exists Review;
+CREATE TABLE Review(
+Review_ID VARCHAR(100) NOT NULL PRIMARY KEY,
+Review_Text VARCHAR(100) NOT NULL,
+Review_Rating INT NOT NULL,
+FOREIGN KEY (Cafe_ID) REFERENCES Cafe(Cafe_ID) ON DELETE CASCADE,
+FOREIGN KEY (Customer_ID) REFERENCES Customer(Customer_ID) ON DELETE CASCADE
+);
