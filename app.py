@@ -16,7 +16,7 @@ def dbConnect(user, password):
         host="localhost",
         user=user,
         passwd=password,
-        database="DANKTHEBANK",
+        database="cafemeet",
     )
     return db
 
