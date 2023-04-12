@@ -1,5 +1,6 @@
 drop table if exists Cafe_Features;
 CREATE TABLE Cafe_Features(
+Cafe_ID VARCHAR(100) NOT NULL,
 Seating_Type VARCHAR(100) NOT NULL,
 Amenities VARCHAR(200) NOT NULL,
 Catering bit,
