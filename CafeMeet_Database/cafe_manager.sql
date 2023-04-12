@@ -1,5 +1,6 @@
 drop table if exists Cafe_Manager;
 CREATE TABLE Cafe_Manager(
+Cafe_ID VARCHAR(100) NOT NULL,
 Manager_ID VARCHAR(100) NOT NULL PRIMARY KEY,
 Manager_Name VARCHAR(100) NOT NULL,
 Manager_Email VARCHAR(100) NOT NULL,
